@@ -27,17 +27,19 @@
 
         <nav class="navigation">
           <ul class="site-nav list">
-            <li class="item">
+            <li class="site-nav__item">
               <a href="./index.html" class="link">Студія</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link active">Портфоліо</a>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="link site-nav--active"
+                >Портфоліо</a
+              >
             </li>
-            <li class="item"><a href="" class="link">Контакти</a></li>
+            <li class="site-nav__item"><a href="" class="link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="auth-nav list">
-          <li class="item">
+          <li class="auth-nav__item">
             <a href="mailto:info@devstudio.com" class="link">
               <svg class="icon-letter" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
@@ -45,7 +47,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
+          <li class="auth-nav__item">
             <a href="tel:+380961111111" class="link">
               <svg class="icon-smartphone" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
@@ -310,12 +312,12 @@
       <div class="container">
         <div class="container-block">
           <div class="container-left">
-            <a href="" class="logo-text logo-footer link"
+            <a href="" class="logo-text logo-text--light link"
               ><span class="logo">Web</span>Studio</a
             >
             <address class="address-section">
               <ul class="address list">
-                <li class="item">
+                <li class="adress__item">
                   <a
                     href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                     target="_blank"
@@ -324,14 +326,14 @@
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li class="item">
+                <li class="adress__item">
                   <a
                     href="mailto:info@devstudio.com"
                     class="link footer-contact"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li class="item">
+                <li class="adress__item">
                   <a href="tel:+380961111111" class="link footer-contact">
                     +38 096 111 11 11</a
                   >
@@ -340,9 +342,9 @@
             </address>
           </div>
           <div class="footer-social">
-            <p class="footer-item"><strong>приєднуйтесь</strong></p>
-            <ul class="list footer-block-img">
-              <li class="social-footer">
+            <p class="footer-social__strong"><strong>приєднуйтесь</strong></p>
+            <ul class="list footer-block">
+              <li class="footer-block__social-footer">
                 <a class="link bg-link" href="#">
                   <svg
                     aria-label="instagram"
@@ -354,7 +356,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-footer">
+              <li class="footer-block__social-footer">
                 <a class="link bg-link" href="#">
                   <svg
                     aria-label="twitter"
@@ -366,7 +368,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-footer">
+              <li class="footer-block__social-footer">
                 <a class="link bg-link" href="#">
                   <svg
                     aria-label="facebook"
@@ -378,7 +380,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-footer">
+              <li class="footer-block__social-footer">
                 <a class="link bg-link" href="#">
                   <svg
                     aria-label="linkedin"
@@ -393,20 +395,20 @@
             </ul>
           </div>
           <div class="footer-form-block">
-            <p class="footer-form-title">Підпишіться на розсилку</p>
+            <p class="footer-form-block__title">Підпишіться на розсилку</p>
             <form class="footer-form">
-              <label class="footer-label">
+              <label class="footer-form__label">
                 <input
                   placeholder="E-mail"
-                  class="modal-form-footer"
+                  class="footer-form__modal"
                   type="email"
                   name="subscribe-user"
                   pattern=".+@.+"
                   required
                 />
               </label>
-              <button type="submit" class="form-footer-btn">
-                <span class="btn-footer-text"> Підписатися</span>
+              <button type="submit" class="footer-form__btn">
+                <span class="footer-form__text"> Підписатися</span>
                 <svg class="footer-send-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-send-icon"></use>
                 </svg>
