@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Header -->
@@ -31,13 +31,14 @@
               <a href="./index.html" class="link">Студія</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="link site-nav--active"
+              <a href="./portfolio.html" class="link site-nav_active"
                 >Портфоліо</a
               >
             </li>
             <li class="site-nav__item"><a href="" class="link">Контакти</a></li>
           </ul>
         </nav>
+
         <ul class="auth-nav list">
           <li class="auth-nav__item">
             <a href="mailto:info@devstudio.com" class="link">
@@ -64,29 +65,28 @@
         <div class="container">
           <!-- Hidden -->
           <h1 class="portfolio-hidden visually-hidden">Портфоліо</h1>
-
+          <!-- Buttons -->
           <ul class="filters list">
-            <!-- Buttons -->
-            <li class="item">
-              <button type="button" class="btn-filter">Усі</button>
+            <li class="filters__item">
+              <button type="button" class="filters__btn">Усі</button>
             </li>
-            <li class="item">
-              <button type="button" class="btn-filter">Веб-сайти</button>
+            <li class="filters__item">
+              <button type="button" class="filters__btn">Веб-сайти</button>
             </li>
-            <li class="item">
-              <button type="button" class="btn-filter">Додатки</button>
+            <li class="filters__item">
+              <button type="button" class="filters__btn">Додатки</button>
             </li>
-            <li class="item">
-              <button type="button" class="btn-filter">Дизайн</button>
+            <li class="filters__item">
+              <button type="button" class="filters__btn">Дизайн</button>
             </li>
-            <li class="item">
-              <button type="button" class="btn-filter">Маркетинг</button>
+            <li class="filters__item">
+              <button type="button" class="filters__btn">Маркетинг</button>
             </li>
           </ul>
 
           <ul class="portfolio-list list">
-            <li class="portfolio-card">
-              <a href="#" class="link">
+            <li class="portfolio-list__card">
+              <a href="#" class="portfolio-list__link link">
                 <div class="slide-container">
                   <img
                     src="./images/texnoxriak.jpg"
@@ -109,8 +109,8 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="#" class="link">
+            <li class="portfolio-list__card">
+              <a href="#" class="portfolio-list__link link">
                 <div class="slide-container">
                   <img
                     src="./images/new-orlean.jpg"
@@ -135,8 +135,8 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="#" class="link">
+            <li class="portfolio-list__card">
+              <a href="#" class="portfolio-list__link link">
                 <div class="slide-container">
                   <img
                     src="./images/seafood.jpg"
@@ -159,8 +159,8 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="#" class="link">
+            <li class="portfolio-list__card">
+              <a href="#" class="portfolio-list__link link">
                 <div class="slide-container">
                   <img
                     src="./images/prime.jpg"
@@ -183,8 +183,8 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="#" class="link">
+            <li class="portfolio-list__card">
+              <a href="#" class="portfolio-list__link link">
                 <div class="slide-container">
                   <img
                     src="./images/boxes.jpg"
@@ -207,8 +207,8 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="#" class="link">
+            <li class="portfolio-list__card">
+              <a href="#" class="portfolio-list__link link">
                 <div class="slide-container">
                   <img
                     src="./images/inspiration.jpg"
@@ -231,8 +231,8 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="#" class="link">
+            <li class="portfolio-list__card">
+              <a href="#" class="portfolio-list__link link">
                 <div class="slide-container">
                   <img
                     src="./images/edition.jpg"
@@ -255,8 +255,8 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="#" class="link">
+            <li class="portfolio-list__card">
+              <a href="#" class="portfolio-list__link link">
                 <div class="slide-container">
                   <img
                     src="./images/lab.jpg"
@@ -279,8 +279,8 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="#" class="link">
+            <li class="portfolio-list__card">
+              <a href="#" class="portfolio-list__link link">
                 <div class="slide-container">
                   <img
                     src="./images/growing-business.jpg"
@@ -312,7 +312,7 @@
       <div class="container">
         <div class="container-block">
           <div class="container-left">
-            <a href="" class="logo-text logo-text--light link"
+            <a href="" class="logo-text logo-text_light link"
               ><span class="logo">Web</span>Studio</a
             >
             <address class="address-section">
@@ -345,7 +345,7 @@
             <p class="footer-social__strong"><strong>приєднуйтесь</strong></p>
             <ul class="list footer-block">
               <li class="footer-block__social-footer">
-                <a class="link bg-link" href="#">
+                <a class="link footer-block__links_bg-link" href="#">
                   <svg
                     aria-label="instagram"
                     class="footer-link"
@@ -357,7 +357,7 @@
                 </a>
               </li>
               <li class="footer-block__social-footer">
-                <a class="link bg-link" href="#">
+                <a class="link footer-block__links_bg-link" href="#">
                   <svg
                     aria-label="twitter"
                     class="footer-link"
@@ -369,7 +369,7 @@
                 </a>
               </li>
               <li class="footer-block__social-footer">
-                <a class="link bg-link" href="#">
+                <a class="link footer-block__links_bg-link" href="#">
                   <svg
                     aria-label="facebook"
                     class="footer-link"
@@ -381,7 +381,7 @@
                 </a>
               </li>
               <li class="footer-block__social-footer">
-                <a class="link bg-link" href="#">
+                <a class="link footer-block__links_bg-link" href="#">
                   <svg
                     aria-label="linkedin"
                     class="footer-link"
